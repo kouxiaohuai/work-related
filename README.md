@@ -9,13 +9,16 @@ darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg
 之前是通过Git克隆的darknet项目的源码到本地文件，改为直接下载zip文件然后解压，编译之后，就可以避免之前的问题。
 内存不足解决方法
 My solution to run Yolov3 perfectly was to : modify the cfg/yolov3.cfg :
+```
 batch=1
 subdivisions=1
 width=416
 height=416
+```
 
 [train遇到问题](http://www.luyixian.cn/news_show_20149.aspx)
 使用notepad++工具，打开该文件，编辑->文档格式转换->转化为unix格式。
+```
 [net]
 # Testing
 # batch=1
@@ -23,6 +26,7 @@ height=416
 # Training
 batch=64
 subdivisions=16
+```
 
 遇到问题
 Couldn't open file: /darknet/scripts/2007_train.txt
