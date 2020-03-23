@@ -39,11 +39,13 @@ Couldn't open file: /darknet/scripts/2007_train.txt
 使用notepad++工具，打开该文件，编辑->文档格式转换->转化为unix格式。
 
 修改路径
+```
 classes= 2
 train  = scripts/2007_train.txt
 valid  = scripts/2007_val.txt
 names = data/voc.names
 backup = backup
+```
 
 遇到问题
 YOLOV3无法加载图片"cannot load image"
