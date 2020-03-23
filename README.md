@@ -49,10 +49,13 @@ backup = backup
 
 遇到问题
 YOLOV3无法加载图片"cannot load image"
+
 1、修改路径
+
 2、使用notepad++工具，打开该文件，编辑->文档格式转换->转化为unix格式。
 
 yolov3用训练过的weights文件继续训练
+
 ./darknet detector train cfg/voc.data cfg/yolov3-voc.cfg backup/yolov3-voc_100.weights
 
 [解决sudo apt-get install libprotobuf-dev
