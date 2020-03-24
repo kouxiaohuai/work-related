@@ -8,7 +8,7 @@
 ```
 darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg
 ```
-提示Couldn't open file: data/coco.names
+问题提示Couldn't open file: data/coco.names
 
 之前是通过Git克隆的darknet项目的源码到本地文件，改为直接下载zip文件然后解压，编译之后，就可以避免之前的问题。
 
@@ -35,12 +35,9 @@ batch=64
 subdivisions=16
 ```
 
-遇到问题
-Couldn't open file: /darknet/scripts/2007_train.txt
+问题提示Couldn't open file: /darknet/scripts/2007_train.txt
 
-使用notepad++工具，打开该文件，编辑->文档格式转换->转化为unix格式。
-
-修改路径
+1、修改路径
 ```
 classes= 2
 train  = scripts/2007_train.txt
@@ -48,9 +45,9 @@ valid  = scripts/2007_val.txt
 names = data/voc.names
 backup = backup
 ```
+2、使用notepad++工具，打开该文件，编辑->文档格式转换->转化为unix格式。
 
-遇到问题
-YOLOV3无法加载图片"cannot load image"
+问题提示YOLOV3无法加载图片"cannot load image"
 
 1、修改路径
 
