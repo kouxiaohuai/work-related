@@ -13,6 +13,7 @@ darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg
 之前是通过Git克隆的darknet项目的源码到本地文件，改为直接下载zip文件然后解压，编译之后，就可以避免之前的问题。
 
 内存不足解决方法
+
 My solution to run Yolov3 perfectly was to : modify the cfg/yolov3.cfg :
 ```
 batch=1
