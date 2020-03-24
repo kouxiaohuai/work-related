@@ -16,6 +16,7 @@ darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg
 
 My solution to run Yolov3 perfectly was to : modify the cfg/yolov3.cfg :
 ```
+[net]
 batch=1
 subdivisions=1
 width=416
